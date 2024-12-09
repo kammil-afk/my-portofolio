@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #007bff;
+      }
+
+      .hero {
+        height: 100vh;
+        background: linear-gradient(135deg, #007bff, #00d4ff);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .hero button {
+        background: #fff;
+        color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      .hero button:hover {
+        background: #007bff;
+        color: #fff;
+      }
+
+      .about,
+      .projects,
+      .contact {
+        padding: 50px 10%;
+        text-align: center;
+      }
+
+      .projects .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .projects .project {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 300px;
+        margin: 10px auto;
+        text-align: center;
+      }
+
+      .projects .project img {
+        width: 100%;
+        height: auto;
+      }
+
+      .projects .project h3 {
+        padding: 10px;
+      }
+
+      .contact h2 {
+        margin-bottom: 20px;
+      }
+
+      .contact .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .contact .social-links a {
+        text-decoration: none;
+        color: #fff;
+        background: #007bff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1rem;
+        transition: background 0.3s;
+      }
+
+      .contact .social-links a:hover {
+        background: #0056b3;
+      }
+
+      .contact .social-links a i {
+        font-size: 1.2rem;
+      }
+
+      footer {
+        padding: 20px;
+        background: #333;
+        color: #fff;
+        text-align: center;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I'm a web developer passionate about creating amazing experiences.</p>
+      <button>Get in Touch</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a dedicated developer with experience in web design and
+        development. I specialize in creating beautiful, responsive websites.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <img src="https://via.placeholder.com/300" alt="Project 1" />
+          <h3>Project Title 1</h3>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/300" alt="Project 2" />
+          <h3>Project Title 2</h3>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/300" alt="Project 3" />
+          <h3>Project Title 3</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me on any of the following platforms:</p>
+      <div class="social-links">
+        <a href="https://wa.me/089636269488" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://instagram.com/kammilmhmmd" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://github.com/kammil-afk" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // JavaScript for smooth scrolling
+      document.querySelectorAll("nav ul li a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute("href"));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 50,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
